@@ -14,6 +14,7 @@ public class Knight extends Attacker {
         this.attackLevel = 6;
         this.defenceLevel = 5;
         this.recoveryLevel = 7;
+        this.evasionLevel = 3;
         this.armour = Armour.LIGHT_ARMOUR;
         this.weapons = new HashMap<String, Weapon>();
         this.currentWeapon = Weapon.DAGGER;

@@ -15,4 +15,11 @@ public enum Weapon {
         this.attackModifier = attackModifier;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public int getAttackModifier() {
+        return attackModifier;
+    }
 }

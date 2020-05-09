@@ -29,8 +29,12 @@ public abstract class Attacker extends Role {
     }
 
     public void changeWeapon(String newWeapon) {
-        Weapon foundWeapon = weapons.get(newWeapon);
+        weapons.put(currentWeapon.getType(), currentWeapon);
+        Weapon foundWeapon = weapons.remove(newWeapon);
         currentWeapon = foundWeapon;
     }
 
+    public void gainWeapon(Weapon weapon) {
+        weapons.put(weapon.getType(), weapon);
+    }
 }

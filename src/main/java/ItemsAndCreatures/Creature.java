@@ -1,6 +1,6 @@
 package ItemsAndCreatures;
 
-public enum Creatures {
+public enum Creature {
 
     SALAMANDER("Salamander", 1),
     PEGASUS("Pegasus", 2),
@@ -9,7 +9,7 @@ public enum Creatures {
     private final String type;
     private final int defenceModifier;
 
-    Creatures(String type, int defenceModifier) {
+    Creature(String type, int defenceModifier) {
         this.type = type;
         this.defenceModifier = defenceModifier;
     }

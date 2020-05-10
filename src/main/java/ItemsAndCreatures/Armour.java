@@ -15,4 +15,11 @@ public enum Armour {
         this.defenceModifier = defenceModifier;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public int getDefenceModifier() {
+        return defenceModifier;
+    }
 }

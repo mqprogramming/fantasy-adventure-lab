@@ -10,14 +10,14 @@ public class Knight extends Attacker {
 
     public Knight(String name) {
         super(name);
-        this.healthLevel = 50;
-        this.attackLevel = 6;
-        this.defenceLevel = 5;
-        this.recoveryLevel = 7;
-        this.evasionLevel = 3;
         this.armour = Armour.LIGHT_ARMOUR;
         this.weapons = new HashMap<String, Weapon>();
         this.currentWeapon = Weapon.DAGGER;
+        this.healthLevel = 50;
+        this.attackLevel = (6 + this.currentWeapon.getAttackModifier());
+        this.defenceLevel = (5 + this.armour.getDefenceModifier());
+        this.recoveryLevel = 7;
+        this.evasionLevel = 3;
     }
 
     public void inspiringSpeech(Role player) {

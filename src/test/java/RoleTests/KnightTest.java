@@ -24,8 +24,8 @@ public class KnightTest {
         assertNotNull(knight.getCurrentWeapon());
         assertNotNull(knight.getArmour());
 
-        assertEquals(6, knight.getAttackLevel());
-        assertEquals(5, knight.getDefenceLevel());
+        assertEquals(7, knight.getAttackLevel());
+        assertEquals(6, knight.getDefenceLevel());
         assertEquals(50, knight.getHealthLevel());
         assertEquals(7, knight.getRecoveryLevel());
         assertEquals(3, knight.getEvasionLevel());
@@ -48,8 +48,8 @@ public class KnightTest {
     @Test
     public void canUseSpecial() {
         knight.inspiringSpeech(knight);
-        assertEquals(7, knight.getAttackLevel());
-        assertEquals(6, knight.getDefenceLevel());
+        assertEquals(8, knight.getAttackLevel());
+        assertEquals(7, knight.getDefenceLevel());
     }
 
     @Test
